@@ -9,7 +9,7 @@ call vundle#rc()
 " Vundle manages vundle
 Bundle 'gmaric/vundle'
 
-Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-fugitive'     " enable git from inside vim
 
 syntax enable
 filetype plugin indent on	" Turn on file type detection
@@ -20,6 +20,7 @@ set wildmode=list:longest       " file/path tab auto-complete
 
 set number			" line numbers
 set ruler			" cursor position
+set relativenumber              " relative line numbers from cursor position
 
 set incsearch			" highlight search as you type
 set hlsearch			" highlight matches
