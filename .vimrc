@@ -9,7 +9,8 @@ call vundle#rc()
 " Vundle manages vundle
 Bundle 'gmaric/vundle'
 
-Bundle 'tpope/vim-fugitive'     " enable git from inside vim
+" enable git from inside vim
+Bundle 'tpope/vim-fugitive'
 
 syntax enable
 filetype plugin indent on	" Turn on file type detection
@@ -28,9 +29,13 @@ set hlsearch			" highlight matches
 set wrap
 set visualbell
 
-set nobackup			" don't backup file before overwriting
-set nowritebackup		" same again !?!
+set nobackup			      " don't backup file before overwriting
+set nowritebackup		    " same again !?!
 
-set expandtab			" use spaces instead of tabs
+set expandtab			      " use spaces instead of tabs
+set tabstop=2           " tabs to 2 spaces
+set shiftwidth=2        " tabs to 2 spaces
 
-set laststatus=2		" show the status line all the time
+set laststatus=2	      " show the status line all the time
+
+set autochdir           " always change to directory of current file
