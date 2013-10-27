@@ -11,6 +11,8 @@ Bundle 'gmaric/vundle'
 
 " enable git from inside vim
 Bundle 'tpope/vim-fugitive'
+" rails commands
+Bundle 'tpope/vim-rails'
 
 syntax enable
 filetype plugin indent on	" Turn on file type detection
@@ -21,7 +23,7 @@ set wildmode=list:longest " file/path tab auto-complete
 
 set number			          " line numbers
 set ruler			            " cursor position
-set relativenumber        " relative line numbers from cursor position
+"set relativenumber        " relative line numbers from cursor position
 
 set incsearch			        " highlight search as you type
 set hlsearch			        " highlight matches
@@ -38,4 +40,8 @@ set shiftwidth=2          " tabs to 2 spaces
 
 set laststatus=2	        " show the status line all the time
 
-set autochdir             " always change to directory of current file
+"set autochdir             " always change to directory of current file
+
+" shortcut to run rspec in current directory
+map ,t :!rspec<CR>
+
